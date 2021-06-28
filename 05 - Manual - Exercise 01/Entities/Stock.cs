@@ -25,7 +25,7 @@ namespace Entities {
              Amount -= amount;
         }
         public override string ToString() {
-            return Name + ", $ " + Price.ToString("F2") + ", " + Amount + " Unidades, TOTAL R$ " + PriceAmount();
+            return Name + ", $ " + Price.ToString("F2") + ", " + Amount + " Unidades, TOTAL R$ " + PriceAmount;
         }
     }
 }
