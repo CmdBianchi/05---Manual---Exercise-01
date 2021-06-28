@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Text;
 namespace Entities {
     class Stock {
-        public string Name { get; set; }
+        private string _name;
         public double Price { get; set; }
         public int Amount { get; set; }
         public Stock() { }
         public Stock(string name, double price, int amount) {
-            Name = name;
+            _name = name;
             Price = price;
             Amount = amount;
         }
-        public double PriceAmount() {
-            return Price * Amount;
+        public string Name {
+            get { return _name; }
+        }
+        public double PriceAmount {
+            get { return Price * Amount; }
         }
         public void AddAmount(int amount) {
              Amount += amount;
